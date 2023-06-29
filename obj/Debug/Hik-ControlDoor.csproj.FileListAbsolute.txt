@@ -1,0 +1,11 @@
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\obj\Debug\Hik-ControlDoor.csproj.AssemblyReference.cache
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\obj\Debug\Hik-ControlDoor.csproj.SuggestedBindingRedirects.cache
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\obj\Debug\Hik-ControlDoor.csproj.CoreCompileInputs.cache
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\bin\Debug\Hik-ControlDoor.exe.config
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\bin\Debug\Hik-ControlDoor.exe
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\bin\Debug\Hik-ControlDoor.pdb
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\obj\Debug\Hik-ControlDoor.exe
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\obj\Debug\Hik-ControlDoor.pdb
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yshaeldev\Desktop\yshrael\hikvision\Hik-ControlDoor\obj\Debug\Hik-ControlDoor.csproj.CopyComplete
