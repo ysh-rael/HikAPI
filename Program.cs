@@ -7,11 +7,50 @@ using System.Threading.Tasks;
 namespace HikAPI
 {
     using HikAPI.Event;
+    using HikAPI.Public.FileManeger;
+    using System.Xml;
+
     internal class Program
     {
         public static bool Continuar = true;
+
+        private static readonly FileManeger PathResponse = new FileManeger("/res");
+
         static async Task Main(string[] args)
         {
+            // Argumento passado na chamada do executável. Vazio pede para buscar todos os config na pasta req.
+            try
+            {
+                string AllRequestFilePathOf = args[0];
+                /*foreach (string PathFileRequest in PathRequest.findFile(AllRequestFilePathOf)) // Para cada arquivo config.*.BRA encontrado.
+                {
+                    if (string.IsNullOrEmpty(PathFileRequest)) continue;
+                    BRA RequestFile = new BRA(PathRequest.read(PathFileRequest, false, false));
+                    string type = $"{RequestFile.type[0]}{RequestFile.type[1]}{RequestFile.type[2]}";
+                    switch (type)
+                    {
+                        case "100":
+                            break;
+                        case "200":
+                            break;
+                        case "300":
+                            break;
+                        case "400":
+                            break;
+                        case "500":
+                            break;
+                        case "600":
+                            break;
+                        default:
+                            break;
+                    }
+                }*/
+            }
+            catch { };
+
+
+
+            /*
             Device Dispositivo = new Device();
 
             Dispositivo.struDeviceInfo.strUsername = "admin";
@@ -23,7 +62,6 @@ namespace HikAPI
 
             // Chamo classe desejada, e passo o equipamento para o método que irá disparar o evento.
 
-            /*
             ControlDoor.Open(Dispositivo);
             ControlDoor.Close(Dispositivo);
             ControlDoor.StayOpen(Dispositivo);
@@ -49,22 +87,22 @@ namespace HikAPI
             UserManagement.Set(Dispositivo, "333", "Meio besta", "normal", "1")
             */
 
-           /* bool Usuario = UserManagement.Set(Dispositivo, "333", "Meio besta", "normal", "1");
-            if (Usuario)
-            {
-                string path = "C:\\Users\\yshaeldev\\Desktop\\yshrael\\hikvision\\HikAPI\\bin\\Debug\\output\\";
-                bool FaceId = FaceManagement.Set(Dispositivo, "333", "blackFD", 1, $"{path}face.jpg");
-                if (FaceId)
-                {
-                    bool Cartao = CardManagement.Set(Dispositivo, "333", "2023", "normalCard");
-                    if (Cartao)
-                    {
-                        Console.WriteLine("Helo, word! Tudo certo, até agora.");
-                        await Task.Delay(TimeSpan.FromSeconds(8));
-                        Continuar = false;
-                    }
-                }
-            }*/
+            /* bool Usuario = UserManagement.Set(Dispositivo, "333", "Meio besta", "normal", "1");
+             if (Usuario)
+             {
+                 string path = "C:\\Users\\yshaeldev\\Desktop\\yshrael\\hikvision\\HikAPI\\bin\\Debug\\output\\";
+                 bool FaceId = FaceManagement.Set(Dispositivo, "333", "blackFD", 1, $"{path}face.jpg");
+                 if (FaceId)
+                 {
+                     bool Cartao = CardManagement.Set(Dispositivo, "333", "2023", "normalCard");
+                     if (Cartao)
+                     {
+                         Console.WriteLine("Helo, word! Tudo certo, até agora.");
+                         await Task.Delay(TimeSpan.FromSeconds(8));
+                         Continuar = false;
+                     }
+                 }
+             }*/
 
             while (Continuar) { }
         }
